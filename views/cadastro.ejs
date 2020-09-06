@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 500px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registrar-se</h2>
+    <form action="/registro" method="POST">
+        <label for="name">Informe Seu Primeiro nome</label>
+        <input type="text" name="name">
+
+        <label for="sobreNome">Informe Seu Sobrenome</label>
+        <input type="text" name="sobreNome">
+
+        <label for="email">Digite seu email principal</label>
+        <input type="email" name="email">
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    <a href="/home">Voltar para Pagina de inicio</a>
+</body>
+</html>

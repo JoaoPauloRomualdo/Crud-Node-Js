@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Cadastrados no Sistema</title>
+</head>
+
+<body>
+
+    <div>
+        <%  cadUser.map(cadUser =>{%>
+        <p><%= cadUser.nome %> <%= cadUser.sobreNome %> </p>
+
+        <strong>Seu email : <%= cadUser.email %> </strong>
+        <%});%>
+    </div>
+    <a href="/home">Volta para Home</a>
+</body>
+
+</html>
